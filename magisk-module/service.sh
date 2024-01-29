@@ -1,3 +1,7 @@
 MODDIR="${0%/*}"
 
-unshare "$MODDIR/system/bin/frida-inject-service"
+
+while true; do
+   unshare "$MODDIR/system/bin/frida-inject-service"
+   sleep 15
+done
